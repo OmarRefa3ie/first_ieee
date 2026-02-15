@@ -1,11 +1,11 @@
-import 'package:first_ieee/screens/CardScreen.dart';
-import 'package:first_ieee/screens/ResturantScreen.dart';
-import 'package:first_ieee/screens/WhatsAppScreen.dart';
+import 'package:first_ieee/screens/Onboarding_Screen.dart';
+import 'package:first_ieee/screens/Splash_Screen.dart';
+import 'package:first_ieee/screens/gender.dart';
+import 'package:first_ieee/screens/login_screen.dart';
 import 'package:flutter/material.dart';
 
 void main(){
   runApp(MyApp(),);
-
   }
 
   class MyApp extends StatelessWidget {
@@ -14,20 +14,8 @@ void main(){
     @override
     Widget build(BuildContext context) {
       return  MaterialApp(
-        home: ResturantScreen(),
-        themeMode: ThemeMode.dark ,
-        darkTheme: ThemeData(
-          appBarTheme: AppBarTheme(
-            backgroundColor: Colors.blue,
-          ),
-          scaffoldBackgroundColor: Colors.grey,
-        ),
-        theme: ThemeData(
-          appBarTheme: AppBarTheme(
-            backgroundColor: Colors.blueAccent,
-          ),
-          scaffoldBackgroundColor: Colors.red,
-        ),
+        home: SplashScreen(),
+
       );
     }
   }
